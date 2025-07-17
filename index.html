@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progga Paromita - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Poppins (Import bold weights for better control) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar-content">
+            <!-- Logo with gradient text -->
+            <h1 class="logo">
+                <a href="#home" class="nav-link" data-section="home">
+                    <span class="gradient-text-logo">Progga Paromita</span>
+                </a>
+            </h1>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <nav class="mobile-nav-menu">
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link" data-section="home">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-section="about">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <!-- Text on Left -->
+                <div class="hero-text">
+                    <h2>Hi, I'm <span class="gradient-text">Progga Paromita</span></h2>
+                    <!-- Dynamic typing effect for roles -->
+                    <div class="hero-roles">
+                        <span id="role-typing-text" class="typing-text"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">Designing intelligent software with Python, TensorFlow, OpenCV, and deep learning. I build solutions, not just models.</p>
+                    <div class="hero-buttons">
+                        <a href="Progga_Paromita_Resume.pdf" download class="btn btn-outline">
+                            Download Resume <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-primary smooth-scroll">Get In Touch</a>
+                    </div>
+                </div>
+                <!-- Image on Right -->
+                <div class="hero-image">
+                    <img src="Progga.jpg" alt="Progga Paromita Profile" class="profile-pic">
+                </div>
+            </div>
+            <!-- Scroll to explore -->
+            <a href="#about" class="scroll-down-arrow smooth-scroll">
+                Scroll to explore <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section common-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content-grid">
+                    <div class="about-card journey-card">
+                        <h3 class="card-title purple-text">My Journey</h3>
+                        <p>I'm Progga Paromita, a Computer Science Engineering student at Khulna University of Engineering & Technology (2023–2027), passionate about App Development, and computer vision.  With a strong focus on problem-solving and a drive to solve real-world challenges, I aspire to become a software engineer — and go beyond that by continuously learning and creating tech-driven change.</p>
+                        <p>I love working in a team environment and also bring strong leadership capabilities to any project I’m part of. </p>
+                    </div>
+                    <div class="about-right-column">
+                        <div class="about-card status-card">
+                            <h3 class="card-title blue-text">Current Status</h3>
+                            <div class="status-item">
+                                <i class="fas fa-briefcase status-icon"></i>
+                                <span>Exploring internship opportunities for 2026</span>
+                            </div>
+                        </div>
+                        <div class="about-card languages-card">
+                            <h3 class="card-title">Languages</h3>
+                            <div class="language-item">
+                                <span>English</span>
+                                <span class="language-tag">Proficient</span>
+                            </div>
+                            <div class="language-item">
+                                <span>Bangla</span>
+                                <span class="language-tag">Native</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section common-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                            <video autoplay loop muted playsinline>
+                                <source src="weather_app.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Weather_App</h3>
+                        <p>The Weather Forecast App is a simple yet powerful tool designed to help you stay informed about the weather conditions around you—anytime, anywhere. Whether you're planning a trip, dressing for the day, or just curious about the forecast, this app makes checking the weather quick and effortless.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Progga-Paromita/Weather_App" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="shop_app –.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Shopping_App</h3>
+                        <p>Shopping_App is a beautifully designed Flutter mobile application that offers a seamless online shopping experience. </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Progga-Paromita/Shopping_App" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                            <video autoplay loop muted playsinline >
+                                <source src="my_todo_app.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>My_Todo_App</h3>
+                        <p>My_Todo_App is a lightweight and intuitive Flutter-based task manager that helps you stay organized and productive.</p>
+                        <div class="project-links">
+                             <a href="https://github.com/Progga-Paromita/My_Todo_App" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <!--<div class="project-card">
+                        <div class="project-video-wrapper">
+                           <video autoplay loop muted playsinline>
+                                <source src="Tic Tac Toe.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Tic-Tac-Toe AI</h3>
+                        <p>Tic-Tac-Toe game where a human plays against an AI, built with Flask (Python) and a HTML/CSS/JS frontend for an interactive experience.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Ayushii-Kumari/Tic-Tac-Toe.AI" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="Face Recognition Attendance System.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Face Recognition Attendance System</h3>
+                        <p>Developed a Python application for about 5 persons leveraging Python and OpenCV, facilitating accurate and efficient attendance tracking image processing technology.</p>
+                         <div class="project-links">
+                            <a href="https://github.com/Ayushii-Kumari/Face-Recognition-Attendance-System" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="
+                                    Crime Prediction and Risk Analysis.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Crime Prediction and Risk Analysis</h3>
+                        <p>AI/ML-based Crime Prediction tool that lets users select a year, state, and district to identify major crime types and assess high- or low-risk areas for better safety planning.</p>
+                         <div class="project-links">
+                            <a href="https://github.com/Ayushii-Kumari/Crime-Prediction-And-Risk-Analysis" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section common-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-blue-gradient">
+                                <i class="fas fa-code skill-icon"></i>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>C</span><span>Python</span><span>Java</span><span>C++</span><span>Dart</span></span></span>
+                        </div>
+                    </div>
+                  <!--  <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-green-solid">
+                                <i class="fas fa-globe skill-icon"></i>
+                             </div>
+                            <h3>Frameworks & Libraries</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>TensorFlow</span><span>Pytorch</span><span>Opencv</span><span>Hugging Face</span><span>Langchain</span><span>Flask</span><span>Streamlit</span>
+                        </div> 
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-orange-red-gradient">
+                                <i class="fas fa-brain skill-icon"></i>
+                            </div>
+                            <h3>AI & Machine Learning</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>BERT</span><span>GPT</span><span>LLaMA</span><span>RAG Agents</span>
+                        </div> -->
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-red-pink-gradient">
+                                <i class="fas fa-users skill-icon"></i>
+                            </div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Team Management</span><span>Communication</span><span>Problem Solving</span><span>Creative Thinking</span><span>Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section common-section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-intro">Reach out to me through my social channels or send an email.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/Progga-Paromita" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/progga-paromita-a36a56320/" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="proggaparomitaarish@gmail.com" class="contact-link-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-top-text">
+                <p>App Developer (Flutter) & Aspiring Software Engineer passionate about building impactful, user-focused applications that solve real-world problems.</p>
+            </div>
+            <div class="footer-bottom-row">
+                <p>@ Deployed with <span class="heart-emoji">❤️</span> by Progga Paromita</p>
+                <a href="https://github.com/Progga-Paromita/My-Portfolio" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <i class="fab fa-github"></i> Check this on Github
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Bottom Social Links (globally visible) -->
+    <div class="fixed-bottom-social-links">
+        <a href="https://github.com/Progga-Paromita" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/progga-paromita-a36a56320/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="proggaparomitaarish@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
