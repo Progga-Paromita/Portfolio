@@ -1,31 +1,28 @@
 # 🚀 Progga Paromita Portfolio Website
 
 Welcome to my personal portfolio website!  
-This project is a showcase of my journey as a ***Flutter & Dart app developer*** and aspiring ***software engineer***.  
+This project is a showcase of my journey as a **Flutter & Dart app developer** and aspiring **software engineer**.  
 Explore my skills, featured projects, and ways to connect! 🌟
 
 ---
 
 ## 👩‍💻 About Me
 
-* 🎓 ***Computer Science Engineering*** student at ***Khulna University of Engineering & Technology*** (2023–2027)  
+* 🎓 **Computer Science Engineering** student at **Khulna University of Engineering & Technology** (2023–2027)  
 * 💡 Passionate about app development, problem-solving, and creating tech-driven change  
 * 🤝 Team player with strong leadership skills  
 * 🌱 Always learning and exploring new technologies  
 
 ---
 
-#                     📦 What’s Inside?
+# 📦 What’s Inside?
 
 ## *🏠 Hero Section*
 * Dynamic intro animation  
 * Smooth scroll behavior  
 * Dark/Light theme toggle
-  
 
-## *👤 About Me*
-* My journey, education, and language proficiency
-  
+---
 
 ## *🛠️ Skills & Expertise*
 
@@ -44,6 +41,8 @@ Explore my skills, featured projects, and ways to connect! 🌟
 ### *🗄️ Database & Backend Services*
 * Firebase
 * REST APIs  
+
+---
 
 ## *📚 Currently Learning*
 * State Management (Bloc, Provider)  
