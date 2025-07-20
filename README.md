@@ -6,9 +6,9 @@ Explore my skills, featured projects, and ways to connect! 🌟
 
 ---
 
-# 👩‍💻 About Me
+## 👩‍💻 About Me
 
-* 🎓 Computer Science Engineering student at *Khulna University of Engineering & Technology* (2023–2027)  
+* 🎓 ***Computer Science Engineering*** student at ***Khulna University of Engineering & Technology*** (2023–2027)  
 * 💡 Passionate about app development, problem-solving, and creating tech-driven change  
 * 🤝 Team player with strong leadership skills  
 * 🌱 Always learning and exploring new technologies  
@@ -28,15 +28,22 @@ Explore my skills, featured projects, and ways to connect! 🌟
 ## *🛠️ Skills & Expertise*
 
 ### *⚙️ Backend & Programming Languages*
-* Dart, Python, C++, JavaScript, Java  
+* Dart
+* Python
+* C++
+* JavaScript
+* Java  
 
 ### *📱 Frontend & Mobile*
-* Flutter, HTML, CSS  
+* Flutter
+* HTML
+* CSS  
 
 ### *🗄️ Database & Backend Services*
-* Firebase, REST APIs  
+* Firebase
+* REST APIs  
 
-### *📚 Currently Learning*
+## *📚 Currently Learning*
 * State Management (Bloc, Provider)  
 * Clean Architecture  
 * AI/ML in mobile apps  
