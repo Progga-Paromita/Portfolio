@@ -1,7 +1,7 @@
 # 🚀 Progga Paromita Portfolio Website
 
 Welcome to my personal portfolio website!  
-This project is a showcase of my journey as a *Flutter & Dart app developer* and *aspiring software engineer*.  
+This project is a showcase of my journey as a ***Flutter & Dart app developer*** and aspiring ***software engineer***.  
 Explore my skills, featured projects, and ways to connect! 🌟
 
 ---
@@ -15,15 +15,17 @@ Explore my skills, featured projects, and ways to connect! 🌟
 
 ---
 
-# 📦 What’s Inside?
+#                     📦 What’s Inside?
 
 ## *🏠 Hero Section*
 * Dynamic intro animation  
 * Smooth scroll behavior  
-* Dark/Light theme toggle  
+* Dark/Light theme toggle
+  
 
 ## *👤 About Me*
 * My journey, education, and language proficiency
+  
 
 ## *🛠️ Skills & Expertise*
 
@@ -67,16 +69,17 @@ Explore my skills, featured projects, and ways to connect! 🌟
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-* **Frontend:** HTML, CSS, JavaScript  
-* **Mobile Apps:** Flutter & Dart  
-* **Backend Services:** Firebase, REST APIs  
+* ***Frontend:*** HTML, CSS, JavaScript  
+* ***Mobile Apps:*** Flutter & Dart  
+* ***Backend Services:*** Firebase, REST APIs  
 
 ---
 
-# 🤝 Connect With Me
+## 🤝 Connect With Me
 
+* **Portfolio:** [Portfolio Website](https://progga-paromita.github.io/Portfolio/).
 * **GitHub:** [Progga-Paromita](https://github.com/Progga-Paromita) 🐙  
 * **LinkedIn:** [LinkedIn Profile](https://linkedin.com/in/your-profile) 💼  
 * **Email:** proggaparomitaarish@gmail.com ✉️  
