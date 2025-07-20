@@ -4,7 +4,6 @@ Welcome to my personal portfolio website!
 This project is a showcase of my journey as a **Flutter & Dart app developer** and aspiring **software engineer**.  
 Explore my skills, featured projects, and ways to connect! 🌟
 
----
 
 ## 👩‍💻 About Me
 
@@ -13,7 +12,6 @@ Explore my skills, featured projects, and ways to connect! 🌟
 * 🤝 Team player with strong leadership skills  
 * 🌱 Always learning and exploring new technologies  
 
----
 
 # 📦 What’s Inside?
 
@@ -22,7 +20,6 @@ Explore my skills, featured projects, and ways to connect! 🌟
 * Smooth scroll behavior  
 * Dark/Light theme toggle
 
----
 
 ## *🛠️ Skills & Expertise*
 
@@ -42,7 +39,6 @@ Explore my skills, featured projects, and ways to connect! 🌟
 * Firebase
 * REST APIs  
 
----
 
 ## *📚 Currently Learning*
 * State Management (Bloc, Provider)  
@@ -66,7 +62,6 @@ Explore my skills, featured projects, and ways to connect! 🌟
 * Personal statement  
 * GitHub profile link  
 
----
 
 ## 🛠️ Tech Stack
 
@@ -74,7 +69,6 @@ Explore my skills, featured projects, and ways to connect! 🌟
 * ***Mobile Apps:*** Flutter & Dart  
 * ***Backend Services:*** Firebase, REST APIs  
 
----
 
 ## 🤝 Connect With Me
 
@@ -83,6 +77,5 @@ Explore my skills, featured projects, and ways to connect! 🌟
 * **LinkedIn:** [LinkedIn Profile](https://linkedin.com/in/your-profile) 💼  
 * **Email:** proggaparomitaarish@gmail.com ✉️  
 
----
 
 Made with ❤️ by *Progga Paromita*
