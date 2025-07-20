@@ -1,4 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Theme Toggle Functionality ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+
+    // Set initial theme
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+
     // --- Mobile Navigation Toggle ---
     const menuToggle = document.querySelector('.menu-toggle');
     const mobileNavMenu = document.querySelector('.mobile-nav-menu');
@@ -138,4 +153,133 @@ document.addEventListener('DOMContentLoaded', () => {
     // Call on load and on scroll
     setActiveLink(); // Set initial active link
     window.addEventListener('scroll', setActiveLink);
+
+    // --- Contact Form Functionality ---
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const name = formData.get('name').trim();
+            const email = formData.get('email').trim();
+            const subject = formData.get('subject').trim();
+            const message = formData.get('message').trim();
+            
+            // Basic validation
+            if (!name || !email || !subject || !message) {
+                showFormMessage('Please fill in all fields.', 'error');
+                return;
+            }
+            
+            if (!isValidEmail(email)) {
+                showFormMessage('Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission (replace with actual API call)
+            setTimeout(() => {
+                // Create mailto link as fallback
+                const mailtoLink = `mailto:proggaparomitaarish@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+                
+                // Open email client
+                window.location.href = mailtoLink;
+                
+                // Reset form and button
+                contactForm.reset();
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+                
+                showFormMessage('Message prepared! Your email client should open shortly.', 'success');
+            }, 1000);
+        });
+    }
+    
+    // Email validation function
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+    
+    // Show form message function
+    function showFormMessage(message, type) {
+        // Remove existing message
+        const existingMessage = document.querySelector('.form-message');
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+        
+        // Create new message element
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `form-message ${type}`;
+        messageDiv.textContent = message;
+        
+        // Insert message after form
+        const formContainer = document.querySelector('.contact-form-container');
+        formContainer.appendChild(messageDiv);
+        
+        // Remove message after 5 seconds
+        setTimeout(() => {
+            if (messageDiv.parentNode) {
+                messageDiv.remove();
+            }
+        }, 5000);
+    }
+
+    // Fade-in animation for hero section on page load
+    window.addEventListener('DOMContentLoaded', () => {
+        const hero = document.querySelector('.hero-content.fade-in');
+        if (hero) {
+            hero.classList.add('fade-in');
+        }
+    });
+
+    // Smooth theme toggle transition
+    themeToggle?.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+    });
+
+    // Animate skill bars when in view
+    document.addEventListener('DOMContentLoaded', function() {
+        const bars = document.querySelectorAll('.bar-fill');
+        bars.forEach(bar => {
+            bar.style.width = '0';
+        });
+        function animateBars() {
+            const section = document.querySelector('.skills-section');
+            if (section && section.getBoundingClientRect().top < window.innerHeight - 100) {
+                bars.forEach(bar => {
+                    bar.style.width = bar.getAttribute('style').match(/width:\s*(\d+%)/)[1];
+                });
+                window.removeEventListener('scroll', animateBars);
+            }
+        }
+        window.addEventListener('scroll', animateBars);
+        animateBars();
+    });
+
+    // Add interactive hover effect for skill-category containers
+    document.querySelectorAll('.skill-category').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'scale(1.03)';
+            card.style.boxShadow = '0 8px 32px rgba(60,60,120,0.13)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+            card.style.boxShadow = '';
+        });
+    });
+});
+
+document.getElementById('theme-toggle').addEventListener('click', function() {
+    const currentTheme = document.body.getAttribute('data-theme');
+    document.body.setAttribute('data-theme', currentTheme === 'light' ? 'dark' : 'light');
 });

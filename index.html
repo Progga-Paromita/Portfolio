@@ -18,7 +18,7 @@
             <!-- Logo with gradient text -->
             <h1 class="logo">
                 <a href="#home" class="nav-link" data-section="home">
-                    <span class="gradient-text-logo">Progga Paromita</span>
+                    <span class="gradient-text-logo">Portfolio- Progga Paromita</span>
                 </a>
             </h1>
             <nav class="nav-menu">
@@ -29,6 +29,11 @@
                     <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
                     <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
                 </ul>
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun theme-icon sun-icon"></i>
+                    <i class="fas fa-moon theme-icon moon-icon"></i>
+                </button>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -51,7 +56,7 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero-section">
-            <div class="container hero-content">
+            <div class="container hero-content fade-in">
                 <!-- Text on Left -->
                 <div class="hero-text">
                     <h2>Hi, I'm <span class="gradient-text">Progga Paromita</span></h2>
@@ -59,21 +64,21 @@
                     <div class="hero-roles">
                         <span id="role-typing-text" class="typing-text"></span><span class="cursor">|</span>
                     </div>
-                    <p class="hero-description">Designing intelligent software with Python, TensorFlow, OpenCV, and deep learning. I build solutions, not just models.</p>
+                    <p class="hero-description">Skilled in Flutter & Dart, I build seamless, cross-platform mobile experiences. Proficient with Firebase, REST APIs, and modern tools that make apps smarter, faster, and future-ready.</p>
                     <div class="hero-buttons">
-                        <a href="Progga_Paromita_Resume.pdf" download class="btn btn-outline">
+                        <a href="Progga_Paromita_Resume.pdf" download class="btn btn-outline" title="Download Resume">
                             Download Resume <i class="fas fa-download"></i>
                         </a>
-                        <a href="#contact" class="btn btn-primary smooth-scroll">Get In Touch</a>
+                        <a href="#contact" class="btn btn-primary smooth-scroll" title="Get In Touch">Get In Touch</a>
                     </div>
                 </div>
                 <!-- Image on Right -->
                 <div class="hero-image">
-                    <img src="Progga.jpg" alt="Progga Paromita Profile" class="profile-pic">
+                    <img src="progga.jpg" alt="Progga Paromita Profile" class="profile-pic">
                 </div>
             </div>
-            <!-- Scroll to explore -->
-            <a href="#about" class="scroll-down-arrow smooth-scroll">
+            <!-- Animated Scroll to explore -->
+            <a href="#about" class="scroll-down-arrow smooth-scroll bounce">
                 Scroll to explore <i class="fas fa-chevron-down"></i>
             </a>
         </section>
@@ -201,63 +206,92 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="skills-section common-section">
-            <div class="container">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon-wrapper skill-blue-gradient">
-                                <i class="fas fa-code skill-icon"></i>
-                            </div>
-                            <h3>Programming Languages</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>C</span><span>Python</span><span>Java</span><span>C++</span><span>Dart</span></span></span>
-                        </div>
+    <section id="skills" class="skills-section common-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid-2col">
+                <!-- Backend & Languages -->
+                <div class="skill-category skill-category-backend">
+                    <h3><i class="fas fa-server"></i> Backend & Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" title="Python"><i class="fab fa-python"></i><span>Python</span></div>
+                        <div class="skill-item" title="C"><i class="fas fa-code"></i><span>C</span></div>
+                        <div class="skill-item" title="C++"><i class="fas fa-code"></i><span>C++</span></div>
+                        <div class="skill-item" title="Java"><i class="fab fa-java"></i><span>Java</span></div>
+                        <div class="skill-item" title="Dart"><i class="fab fa-dashcube"></i><span>Dart</span></div>
                     </div>
-                  <!--  <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon-wrapper skill-green-solid">
-                                <i class="fas fa-globe skill-icon"></i>
-                             </div>
-                            <h3>Frameworks & Libraries</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>TensorFlow</span><span>Pytorch</span><span>Opencv</span><span>Hugging Face</span><span>Langchain</span><span>Flask</span><span>Streamlit</span>
-                        </div> 
+                </div>
+                <!-- Frontend & Mobile -->
+                <div class="skill-category skill-category-frontend">
+                    <h3><i class="fas fa-mobile-alt"></i> Frontend & Mobile</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" title="Flutter (Dart)"><i class="fab fa-android"></i><span>Flutter (Dart)</span></div>
+                        <div class="skill-item" title="JavaScript"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon-wrapper skill-orange-red-gradient">
-                                <i class="fas fa-brain skill-icon"></i>
-                            </div>
-                            <h3>AI & Machine Learning</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>BERT</span><span>GPT</span><span>LLaMA</span><span>RAG Agents</span>
-                        </div> -->
+                </div>
+                <!-- Database & Backend Services -->
+                <div class="skill-category skill-category-database">
+                    <h3><i class="fas fa-database"></i> Database & Backend Services</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" title="SQL"><i class="fas fa-database"></i><span>SQL</span></div>
+                        <div class="skill-item" title="Firebase"><i class="fas fa-fire"></i><span>Firebase</span></div>
+                        <div class="skill-item" title="Git"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                        <div class="skill-item" title="REST API"><i class="fas fa-plug"></i><span>REST API</span></div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon-wrapper skill-red-pink-gradient">
-                                <i class="fas fa-users skill-icon"></i>
-                            </div>
-                            <h3>Soft Skills</h3>
-                        </div>
-                        <div class="skill-tags">
-                            <span>Team Management</span><span>Communication</span><span>Problem Solving</span><span>Creative Thinking</span><span>Innovation</span>
-                        </div>
+                </div>
+                <!-- Currently Learning -->
+                <div class="skill-category skill-category-learning">
+                    <h3><i class="fas fa-graduation-cap"></i> Currently Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" title="Dart for Flutter"><i class="fas fa-mobile-alt"></i><span>Dart for Flutter</span></div>
+                        <div class="skill-item" title="Advanced Git"><i class="fas fa-code-branch"></i><span>Advanced Git</span></div>
+                        <div class="skill-item" title="Machine Learning"><i class="fas fa-robot"></i><span>Machine Learning</span></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact-section common-section">
             <div class="container">
                 <h2 class="section-title">Let's Connect</h2>
-                <p class="contact-intro">Reach out to me through my social channels or send an email.</p>
+                <p class="contact-intro">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="section-divider">
+                    <span>or connect with me on</span>
+                </div>
+                
                 <div class="contact-links">
                     <a href="https://github.com/Progga-Paromita" target="_blank" rel="noopener noreferrer" class="contact-link-card">
                         <i class="fab fa-github"></i>
@@ -291,11 +325,12 @@
         </div>
     </footer>
 
+    
     <!-- Fixed Bottom Social Links (globally visible) -->
     <div class="fixed-bottom-social-links">
-        <a href="https://github.com/Progga-Paromita" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/progga-paromita-a36a56320/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="proggaparomitaarish@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Progga-Paromita" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/progga-paromita-a36a56320/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:proggaparomitaarish@gmail.com" title="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
     </div>
 
     <script src="script.js"></script>
