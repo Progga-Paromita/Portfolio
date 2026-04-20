@@ -35,6 +35,59 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Trigger counter animation when stats section is visible
+const statsSection = document.querySelector('.about-stats');
+let statsAnimated = false;
+
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !statsAnimated) {
+            const stats = entry.target.querySelectorAll('.stat h4');
+            stats.forEach((stat, index) => {
+                const values = [11, 2, 50]; // GitHub Repos, Years Learning, GitHub Contributions
+                setTimeout(() => {
+                    animateCounter(stat, 0, values[index], 2000);
+                }, index * 200);
+            });
+            statsAnimated = true;
+        }
+    });
+}, { threshold: 0.5 });
+if (statsSection) {
+    statsObserver.observe(statsSection);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // --- Smooth Scrolling for all internal links ---
     document.querySelectorAll('a.smooth-scroll, .nav-link, .logo a, .mobile-nav-link').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
